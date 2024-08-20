@@ -1,0 +1,52 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="Sample Flat File Source Data"
+  DTS:DTSID="{8C34723F-2192-435D-857E-94E3A94922AF}"
+  DTS:CreationName="FLATFILE">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:Format="Delimited"
+      DTS:LocaleID="1033"
+      DTS:HeaderRowDelimiter="_x000D__x000A_"
+      DTS:RowDelimiter=""
+      DTS:TextQualifier="_x003C_none_x003E_"
+      DTS:CodePage="1252"
+      DTS:ConnectionString="C:\Users\antho\Downloads\sql flat flies\SampleCurrencyData.txt">
+      <DTS:FlatFileColumns>
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x0009_"
+          DTS:DataType="4"
+          DTS:TextQualified="True"
+          DTS:ObjectName="AverageRate"
+          DTS:DTSID="{CD14E61B-AC37-4527-90FA-53F5D4AA668D}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x0009_"
+          DTS:MaximumWidth="3"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="CurrencyID"
+          DTS:DTSID="{4E575455-046A-42C8-B895-3FBAF8254964}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x0009_"
+          DTS:DataType="133"
+          DTS:TextQualified="True"
+          DTS:ObjectName="CurrencyDate"
+          DTS:DTSID="{697F89F6-1FE4-497A-B410-36943890258F}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x000A_"
+          DTS:DataType="4"
+          DTS:TextQualified="True"
+          DTS:ObjectName="EndOfDayRate"
+          DTS:DTSID="{891C163E-A8AD-44FD-93C2-0F60DF134D05}"
+          DTS:CreationName="" />
+      </DTS:FlatFileColumns>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
